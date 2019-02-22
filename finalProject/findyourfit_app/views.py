@@ -1,6 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from rest_framework import viewsets
+from .models import User, TrendyLook, SimilarLook
+from .serializers import *
 
 # Create your views here.
-def helloIndex(req):
-    return HttpResponse("Welcome to find your fit.")
+class ViewTrends(viewsets.ModelViewSet):
+    queryset = TrendyLook.objects.all()
+    serializer_class = TrendyLookSerializer
