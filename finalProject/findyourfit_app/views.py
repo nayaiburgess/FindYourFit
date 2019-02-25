@@ -7,3 +7,5 @@ from .serializers import *
 class ViewTrends(viewsets.ModelViewSet):
     queryset = TrendyLook.objects.all()
     serializer_class = TrendyLookSerializer
+
+class 
