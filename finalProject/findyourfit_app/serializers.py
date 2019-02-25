@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import User, TrendyLook , SimilarLook
+from .models import User, TrendyLook, SimilarLook
 
 class UserSerializer(serializers.ModelSeralizer):
     class Meta:
