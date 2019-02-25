@@ -8,4 +8,10 @@ class ViewTrends(viewsets.ModelViewSet):
     queryset = TrendyLook.objects.all()
     serializer_class = TrendyLookSerializer
 
-class 
+class ViewSimilarLooks(viewsets.ModelViewSet):
+    queryset = SimilarLook.objects.all()
+    serializer_class = SimilarLookSerializer
+
+class UserView(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
