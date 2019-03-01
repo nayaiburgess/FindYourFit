@@ -15,14 +15,14 @@ class User extends Component {
     getAllUsers = () => {
         axios.get('/api/v1/users/')
             .then((res) =>
-                this.setState({ users: res.data })
+                this.setState({ user: res.data })
             )
     }
 
     deleteUser = (user) => {
         axios.delete(`/api/v1/users/${user}`).then(() => {
             this.setState({
-                users: this.state.users.filter(item => item._id !== user)
+                user: this.state.user.filter(item => item._id !== user)
             })
         })
     }
@@ -45,7 +45,7 @@ class User extends Component {
 
  </div>
 
-                {this.state.users.map((user, i) => (
+                {this.state.user.map((user, i) => (
                     <div style = {{marginTop: "50px"}} key={i}>
 
                         <div class="container" style={{ width: "500px" }}>
@@ -61,11 +61,6 @@ class User extends Component {
                                         <div class="media-content">
                                             <p class="title is-4">{user.name}</p>
                                         </div>
-                                    </div>
-
-                                    <div class="content">
-                                        {user.bio}
-                                        <br />
                                     </div>
                                 </div>
                         <button style = {{ margin: "15px"}}class="button is-warning" onClick={() => (this.deleteUser(user._id))}>Delete</button>

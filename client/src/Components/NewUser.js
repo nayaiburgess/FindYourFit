@@ -24,7 +24,7 @@ class newUsers extends Component {
         const newUsers = this.state.user
         axios.post('/api/v1/users/', newUsers)
         .then((res) => {
-            this.props.getAllUsers()
+            // this.props.getAllUsers()
             this.props.toggleNewUser()
         })
     }
@@ -40,7 +40,7 @@ class newUsers extends Component {
 
                         <label class="label"> Username </label>
                         <div class="control">
-                        <input class="input" type="text" name="username" value={this.state.user.username} placeholder="Userame" onChange={this.handleChange}></input>
+                        <input class="input" type="text" name="username" value={this.state.user.username} placeholder="Username" onChange={this.handleChange}></input>
                         </div>
                     </div>
 
