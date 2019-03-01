@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
-
-class NavBar extends Component {
+import { Nav, NavItem } from 'reactstrap';
+import {Link} from 'react-router-dom';
+class Navbar extends Component {
     render() {
         return (
             <div>
-                
+                <Nav>
+                    <NavItem>
+                        <Link to= "/"> Home</Link>
+                    </NavItem>
+                    <NavItem>
+                        <Link to = ''> Shoes </Link>
+                    </NavItem>
+                    <NavItem>
+                        <Link to = "/users"> Make an Account </Link>
+                    </NavItem>
+                </Nav>
             </div>
         );
     }
 }
 
-export default NavBar;
+export default Navbar;

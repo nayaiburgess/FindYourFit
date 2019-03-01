@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TrendyLook from './TrendyLook';
 import axios from 'axios'
+import Navbar from './NavBar';
 
 class Shop extends Component {
     state = {
@@ -27,6 +28,7 @@ class Shop extends Component {
     render() {
         return (
             <div>
+                <Navbar />
                 <h1>Trendy Looks</h1>
                  <section>
                      {this.state.trendylook.map((trendylook,i) => {
