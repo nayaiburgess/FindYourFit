@@ -21,7 +21,6 @@ from . import views
 urlpatterns = [
     path('api/', include('findyourfit_app.urls')),
     path('admin/', admin.site.urls),
-    url(r'^$', views.FrontendAppView.as_view()), #New URL for the index route
-    path('', include('react.urls'))
+    url(r'^$', views.FrontendAppView.as_view()) #New URL for the index route
 ]
 
