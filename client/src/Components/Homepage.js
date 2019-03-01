@@ -11,6 +11,7 @@ class Homepage extends Component {
                   Find Your Fit!
                 </h1>
                 <Link to = "/shoptrendylooks/"> <button className="button is-warning homeButton" > Shop as Guest </button></Link>
+                <Link to = "/users"><button className="button is-warning homebutton" >Sign Up</button></Link>
               </div>
             </div>
           </section>
