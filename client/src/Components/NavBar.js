@@ -15,6 +15,9 @@ class Navbar extends Component {
                     <NavItem>
                         <Link to = "/users"> Users </Link>
                     </NavItem>
+                    <NavItem>
+                        <Link to = "/similarlooks"> Similar Looks </Link>
+                    </NavItem>
                 </Nav>
             </div>
         );

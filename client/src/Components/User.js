@@ -58,7 +58,7 @@ class User extends Component {
                                             </figure>
                                         </div>
                                         <div class="media-content">
-                                            <p class="title is-4">{user.name}</p>
+                                            <p class="title is-4">{user.username}</p>
                                         </div>
                                     </div>
                                 </div>
