@@ -3,6 +3,7 @@ from django.db import models
 class User(models.Model):
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=20)
+    userId = models.AutoField(primary_key=True, null=False)
 
 class TrendyLook(models.Model):
     photo_url = models.CharField(max_length=400, null=True, blank=True)

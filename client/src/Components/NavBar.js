@@ -13,7 +13,7 @@ class Navbar extends Component {
                         <Link to = ''> Shoes </Link>
                     </NavItem>
                     <NavItem>
-                        <Link to = "/users"> Make an Account </Link>
+                        <Link to = "/users"> Users </Link>
                     </NavItem>
                 </Nav>
             </div>

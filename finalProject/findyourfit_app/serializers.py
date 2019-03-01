@@ -4,7 +4,7 @@ from .models import User, SimilarLook, TrendyLook
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('username', 'password')
+        fields = ('username', 'password', 'userId')
 
 class SimilarLookSerializer(serializers.ModelSerializer):
     class Meta: 

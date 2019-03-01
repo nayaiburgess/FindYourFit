@@ -20,10 +20,9 @@ class User extends Component {
     }
 
     deleteUser = (user) => {
-        axios.delete(`/api/v1/users/${user}`).then(() => {
-            this.setState({
-                user: this.state.user.filter(item => item._id !== user)
-            })
+        axios.delete(`api/v1/users/${user}`)
+        .then(() => {
+           this.getAllUsers()
         })
     }
 
@@ -63,7 +62,7 @@ class User extends Component {
                                         </div>
                                     </div>
                                 </div>
-                        <button style = {{ margin: "15px"}}class="button is-warning" onClick={() => (this.deleteUser(user._id))}>Delete</button>
+                        <button style = {{ margin: "15px"}}class="button is-warning" onClick={() => (this.deleteUser(user.userId))}>Delete</button>
                         <button style = {{ margin: "15px"}}class="button is-warning">Edit</button>
                             </div> 
 

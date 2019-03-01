@@ -8,7 +8,8 @@ class newUsers extends Component {
     state = {
         user: {
             username: '',
-            password: ''
+            password: '',
+            userId:''
         }
     }
 
