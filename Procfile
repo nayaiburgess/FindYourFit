@@ -1,0 +1,1 @@
+web: gunicorn findyourfit.wsgi --log-file -

@@ -5,6 +5,7 @@ import TrendyLook from './Components/TrendyLook';
 import User from './Components/User';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import ShopSimilarLook from './Components/ShopSimilarLook';
 
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route exact path="/shoptrendylooks" component={Shop} />
             <Route exact path="/viewtrendylook" component={TrendyLook}/>
             <Route exact path="/users" component={User}/>
+            <Route exact path="/similarlook" component={ShopSimilarLook}/>
           </Switch>
         </Router>
       </div>
