@@ -25,7 +25,7 @@ class newUsers extends Component {
         const newUsers = this.state.user
         axios.post('/api/v1/users/', newUsers)
         .then((res) => {
-            // this.props.getAllUsers()
+            this.props.getAllUsers()
             this.props.toggleNewUser()
         })
     }
